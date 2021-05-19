@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script language="JavasCript">
+        nombre = prompt("nombre del producto");
+        precio = prompt("precio del producto");
+        var cantidad = prompt("cantidad del producto");
+
+        if(cantidad >=10){
+          
+            subtotal = precio * cantidad;
+            descuento = .40 * subtotal;
+            totalDescuento = subtotal - descuento;
+            iva = .16 * totalDescuento;
+            final = totalDescuento + iva;
+            alert("precio es "+final);
+        }else{
+            subtotal = precio * cantidad;
+            iva = .16 * subtotal;
+            final = iva + subtotal;
+            alert("cantidad es "+final);
+        }
+    </script>
+</body>
+
+</html>
